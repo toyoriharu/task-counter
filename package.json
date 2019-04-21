@@ -1,0 +1,33 @@
+{
+  "name": "task-counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/scripts/core.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "compile": "gulp",
+    "watch": "gulp watch",
+    "build": "electron-packager . TaskCounter --platform=win32 --arch=x64 --electronVersion=4.1.2 --overwrite --asar --icon=icon.ico --version-string.FileDescription=TaskCounter"
+  },
+  "keywords": [],
+  "author": "morinaga",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "electron": "^4.1.2",
+    "electron-packager": "^13.1.1",
+    "gulp": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-riot": "^1.1.5",
+    "rimraf": "^2.6.3"
+  },
+  "dependencies": {
+    "chart.js": "^2.8.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "normalize.css": "^8.0.1",
+    "riot": "^3.13.2",
+    "riot-route": "^3.1.4"
+  }
+}

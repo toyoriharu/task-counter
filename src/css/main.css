@@ -1,0 +1,230 @@
+html,
+body {
+  height: 100%;
+  font-size: 13px;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+
+  font-family: 'HigashiOme';
+  background: #eee;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  /* margin-top: 60px; */
+  z-index: 0;
+  padding-top: 30px;
+  height: calc(95% - 60px);
+  max-height: calc(100% - 60px);
+}
+
+.scroll {
+  overflow: visible scroll;
+  width: 100%;
+  height: 100%;
+}
+
+/* task.tag */
+.li-inline {
+  display: inline-block;
+}
+
+.task-box,
+.task-box-group {
+  padding: 3px;
+  background-color: #fff;
+  height: 48px;
+  position: relative;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.task-box {
+  height: 42px;
+}
+
+.gray {
+  background-color: #eee;
+}
+
+.task-box:hover,
+.task-box-group:hover {
+  background-color: #ddd;
+}
+
+.task-box_default {
+  border-left: 5px #aaaaaa solid;
+}
+
+.task-box_skyblue {
+  border-left: 5px rgb(6, 170, 245) solid;
+}
+
+.task-box_purple {
+  border-left: 5px rgb(197, 107, 255) solid;
+}
+
+.task-box_green {
+  border-left: 5px rgb(4, 187, 155) solid;
+}
+
+.task-box_yellow {
+  border-left: 5px rgb(241, 195, 63) solid;
+}
+
+.task-box_red {
+  border-left: 5px rgb(226, 5, 5) solid;
+}
+
+.text_default {
+  color: #000;
+}
+
+.text_skyblue {
+  color: rgb(6, 170, 245);
+}
+
+.text_purple {
+  color: rgb(197, 107, 255);
+}
+
+.text_green {
+  color: rgb(4, 187, 155);
+}
+
+.text_yellow {
+  color: rgb(241, 195, 63);
+}
+
+.text_red {
+  color: rgb(226, 5, 5);
+}
+
+.task-box_title {
+  height: 30px;
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+}
+
+.task-box_task {
+  display: block;
+  width: 200px;
+  height: 24px;
+  position: absolute;
+  left: 8px;
+  top: 0;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.task-box_label {
+  display: block;
+  width: 160px;
+  height: 16px;
+  position: absolute;
+  left: 8px;
+  top: 26px;
+}
+
+.task-box_time {
+  position: absolute;
+  right: 70px;
+  font-size: 1.3rem;
+  top: 22px;
+}
+
+.task-box_btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.start_btn {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bg-default {
+  background-color: #aaaaaa;
+}
+
+.bg-skyblue {
+  background-color: rgb(6, 170, 245);
+}
+
+.bg-purple {
+  background-color: rgb(197, 107, 255);
+
+}
+
+.bg-green {
+  background-color: rgb(4, 187, 155);
+
+}
+
+.bg-yellow {
+  background-color: rgb(241, 195, 63);
+}
+
+.bg-red {
+  background-color: rgb(226, 5, 5);
+
+}
+
+.task-box_default>.task-box_btn .svg {
+  cursor: pointer;
+  fill: #aaaaaa;
+}
+
+.task-box_default>.task-box_btn .svg:hover {
+  fill: #535353;
+}
+
+.task-box_skyblue > .task-box_btn .svg {
+  cursor: pointer;
+  fill:rgb(6, 170, 245);
+}
+
+.task-box_skyblue > .task-box_btn .svg:hover {
+  fill:rgb(17, 93, 128);
+}
+
+.task-box_purple>.task-box_btn .svg {
+  cursor: pointer;
+  fill: rgb(197, 107, 255);
+}
+
+.task-box_purple>.task-box_btn .svg:hover {
+  fill: rgb(111, 39, 158);
+}
+
+.task-box_green>.task-box_btn .svg {
+  cursor: pointer;
+  fill: rgb(4, 187, 155);
+}
+
+.task-box_green>.task-box_btn .svg:hover {
+  fill: rgb(32, 117, 103);
+}
+
+.task-box_yellow>.task-box_btn .svg {
+  cursor: pointer;
+  fill: rgb(241, 195, 63);
+}
+
+.task-box_yellow>.task-box_btn .svg:hover {
+  fill: rgb(155, 123, 35);
+}
+
+.task-box_red>.task-box_btn .svg {
+  cursor: pointer;
+  fill: rgb(226, 5, 5);
+}
+
+.task-box_red>.task-box_btn .svg:hover {
+  fill: rgb(163, 14, 14);
+}

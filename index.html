@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="node_modules/riot/riot+compiler.min.js"></script>
+  <script src="src/scripts/main.js"></script>
+
+  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="src/css/font.css">
+  <link rel="stylesheet" href="src/css/main.css">
+  <title>タスクカウントツール</title>
+</head>
+
+<body>
+  <header>
+    <title-bar></title-bar>
+  </header>
+  <!-- riot tag -->
+  <div class="container">
+    <content></content>
+  </div>
+  <script>
+    // マウント
+    riot.mount('title-bar', 'title-bar');
+    riot.mount('content', 'content');
+    route.start(true);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="node_modules/riot/riot+compiler.min.js"></script>
+  <script src="src/scripts/main.js"></script>
+  <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+
+  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+  <link rel="stylesheet" href="src/css/font.css" />
+  <link rel="stylesheet" href="src/css/main.css" />
+  <title>report</title>
+</head>
+
+<body>
+  <title-bar-sub></title-bar-sub>
+  <div class="container scroll" style="padding: 8px;">
+    <h1>作業時間レポート</h1>
+    <!-- riot tag -->
+    <report-chart></report-chart>
+  </div>
+  <script>
+    // マウント
+    riot.mount('title-bar-sub', 'title-bar-sub');
+    riot.mount('report-chart', 'report-chart');
+  </script>
+</body>
+
+</html>

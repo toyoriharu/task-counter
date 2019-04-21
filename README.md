@@ -1,2 +1,31 @@
-# task-counter
-task counter
+# このアプリについて
+作業時間のカウントツールです
+デスクトップに常駐します
+
+# セットアップ
+## インストール
+```
+npm install
+```
+
+## アプリ起動
+
+### Electron起動
+```
+npm start
+```
+
+### テンプレートファイル監視
+```
+npm run watch
+```
+
+## テンプレートファイルのコンパイル
+```
+npm compile
+```
+
+## パッケージング
+```
+npm run build
+```

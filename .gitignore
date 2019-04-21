@@ -1,0 +1,5 @@
+node_modules
+package-lock.json
+src/scripts/components/js
+TaskCounter-win32-x64
+TaskCounter-win32-x64.zip
